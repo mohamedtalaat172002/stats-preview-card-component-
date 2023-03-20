@@ -1,0 +1,105 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Outfit:wght@300;400;600&family=Work+Sans:ital,wght@0,300;0,400;0,600;0,800;1,200&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;   
+}
+.container{
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: row;
+    margin-top: 9%;
+    border-radius: 12px;   
+    width: 1200px; 
+    
+}
+
+.container .image {
+   background-image:  linear-gradient(
+    hsl(277, 64%, 61%,.6) , 
+    hsl(277, 64%, 61%,.6)),
+   url(images/image-header-desktop.jpg);
+    border-radius: 0px 12px 12px 0px; 
+    background-size: cover;
+    height: 100%;
+    width: 100%; 
+    
+}
+
+    
+
+
+.text{
+    
+    display: flex;
+    flex-direction: column;
+    margin-left:75px ;
+    margin-right: 100px;
+    
+}
+.text h1{
+font-size: 50px;
+margin-bottom: 5px;
+color:white;
+}
+.text p{
+   padding-right: 20px;
+    font-size: 23px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.text  h1 span{
+    color: hsl(277, 64%, 61%);
+}
+.lasttext{
+    display: flex;
+    flex-direction: row;     
+}
+.lasttext pre{
+    padding: 20px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.lasttext span {
+    font-size: 40px;
+    color: white;
+}
+
+@media (max-width: 750px)
+ {   
+    .container{ 
+        flex-direction: column-reverse;
+        margin: 10px;
+        min-width: 200px;
+        margin-top: 5em;
+    } 
+    .container .image{
+      
+        background-image:  linear-gradient(
+      hsl(277, 64%, 61%,.6) , 
+      hsl(277, 64%, 61%,.6)),
+      url(images/image-header-mobile.jpg);
+      background-repeat: no-repeat;              
+        height:300px;
+        width:100%;
+        border-radius: 10px 10px 0 0;     
+        background-size: cover;
+      }
+    .lasttext{      
+       flex-direction: column;   
+        justify-content: center;
+        align-items: center;  
+    }
+    .text{
+        justify-content:center;
+        align-items: center;
+    }    
+  
+}
+
+  
+  
