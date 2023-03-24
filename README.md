@@ -1,4 +1,4 @@
-Git hup page link :
+live site url :
  https://mohamedtalaat172002.github.io/stats-preview-card-component-/
 
 # Frontend Mentor - Stats preview card component
